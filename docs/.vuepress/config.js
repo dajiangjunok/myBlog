@@ -26,8 +26,8 @@ module.exports = {
       '@vuepress/pwa', {
         serviceWorker: true,
         updatePopup: {
-          message: "发现垃圾桶增加新垃圾",
-          buttonText: "更新"
+          message: "发现新内容可用",
+          buttonText: "刷新"
         }
       }
     ]
@@ -72,13 +72,13 @@ module.exports = {
     //  nextLinks: false,
     //  // 默认值是 true 。设置为 false 来禁用所有页面的 上一篇 链接
     //  prevLinks: false
-    // '/zh/': {
-    //   serviceWorker: {
-    //     updatePopup: {
-    //       message: "发现新内容可用",
-    //       buttonText: "刷新"
-    //     }
-    //   }
-    // }
+    '/zh/': {
+      serviceWorker: {
+        updatePopup: {
+          message: "发现新内容可用",
+          buttonText: "刷新"
+        }
+      }
+    }
   },
 }
