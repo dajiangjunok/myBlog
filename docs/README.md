@@ -15,4 +15,4 @@ features:
 footer: MIT Licensed | Copyright © 2021-coderwang
 ---
  
- pwa 生效，注意需要本地安装vuepress ，全局安装会导致无法生成service-work.js文件
+ <!-- pwa 生效，注意需要本地安装vuepress ，全局安装会导致无法生成service-work.js文件 -->

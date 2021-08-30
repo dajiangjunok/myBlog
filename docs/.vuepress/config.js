@@ -21,48 +21,48 @@ module.exports = {
     ['meta', { name: 'msapplication-TileImage', content: '/icons/144.png' }],
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
-  plugins:  [
-   [
-    '@vuepress/pwa', {
-      serviceWorker: true,
-      updatePopup: {
-        message: "发现垃圾桶增加新垃圾",
-        buttonText: "更新"
+  plugins: [
+    [
+      '@vuepress/pwa', {
+        serviceWorker: true,
+        updatePopup: {
+          message: "发现垃圾桶增加新垃圾",
+          buttonText: "更新"
+        }
       }
-    }
-   ]
+    ]
   ],
   themeConfig: {
     logo: '/assets/img/logo.png',
     nav: [{
-        text: '主页',
-        link: '/'
-      },
-      {
-        text: '关于',
-        link: '/about/'
-      },
-      {
-        text: 'github',
-        link: 'https://baidu.com',
-        target: '_self',
-        rel: ''
-      },
-      {
-        text: '语言',
+      text: '主页',
+      link: '/'
+    },
+    {
+      text: 'VuePress',
+      link: '/about/'
+    },
+    {
+      text: 'github',
+      link: 'https://baidu.com',
+      target: '_self',
+      rel: ''
+    },
+    {
+      text: '语言',
+      items: [{
+        text: 'Group1',
         items: [{
-          text: 'Group1',
-          items: [{
-              text: 'About',
-              link: '/about/'
-            },
-            {
-              text: 'Guide',
-              link: '/guide/'
-            },
-          ]
-        }]
-      },
+          text: 'About',
+          link: '/about/'
+        },
+        {
+          text: 'Guide',
+          link: '/guide/'
+        },
+        ]
+      }]
+    },
     ],
     sidebar: 'auto',
     search: true,
