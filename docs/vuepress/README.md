@@ -3,6 +3,7 @@ navbar: true
 ---
 
 ## VuePress
+## VuePress
 
 ### vuepress是什么
 
@@ -861,3 +862,43 @@ module.exports = {
 }
 ```
 
+
+
+### 留言评论
+
+#### valine 和 vssue
+
+两种方案都是可以做到留言功能，不同点valine需要实名制，相比较vssue更麻烦一些。我们使用vssue来完成留言功能
+
+#### vssue使用：
+
+1.前往 [支持的代码托管平台 - 创建 OAuth App](https://vssue.js.org/zh/guide/supported-platforms.html) 
+
+2.注册完毕后我们就可以得到`Client ID` 和 `Client secrets`
+
+3.选中V3 ,V4版本
+
+4.安装 `@vssue/vuepress-plugin-vssue` 和n ` @vssue/api-github-v4` 版本
+
+5.vuepress项目中配置
+
+```js
+module.exports = {
+  plugins: {
+    '@vssue/vuepress-plugin-vssue': {
+      // 设置 `platform` 而不是 `api`
+      platform: 'github-v4',
+
+      // 其他的 Vssue 配置 找到相应的项目信息
+      owner: 'OWNER_OF_REPO',
+      repo: 'NAME_OF_REPO',
+      clientId: 'YOUR_CLIENT_ID',
+      clientSecret: 'YOUR_CLIENT_SECRET',
+    },
+  },
+};
+```
+
+6.使用
+
+md文档中使用  `<Vssue :options="{ locale: 'zh' }" />`  标签使用，该配置仅在此页面生效，也可全局配置，可以在所有配置路由下的文档中增加评论功能，自行了解

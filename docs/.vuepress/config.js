@@ -25,7 +25,7 @@ module.exports = {
     '@vuepress/pwa': {
       serviceWorker: true,
       updatePopup: {
-        message: "发现新内容可用",
+        message: "发现垃圾桶内容更新",
         buttonText: "刷新"
       }
     },
@@ -86,7 +86,7 @@ module.exports = {
     '/zh/': {
       serviceWorker: {
         updatePopup: {
-          message: "发现新内容可用",
+          message: "发现垃圾桶内容更新",
           buttonText: "刷新"
         }
       }
