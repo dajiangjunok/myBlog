@@ -21,17 +21,25 @@ module.exports = {
     ['meta', { name: 'msapplication-TileImage', content: '/icons/144.png' }],
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
-  plugins: [
-    [
-      '@vuepress/pwa', {
-        serviceWorker: true,
-        updatePopup: {
-          message: "发现新内容可用",
-          buttonText: "刷新"
-        }
+  plugins: {
+    '@vuepress/pwa': {
+      serviceWorker: true,
+      updatePopup: {
+        message: "发现新内容可用",
+        buttonText: "刷新"
       }
-    ]
-  ],
+    },
+    '@vssue/vuepress-plugin-vssue': {
+      // 设置 `platform` 而不是 `api`
+      platform: 'github-v4',
+
+      // 其他的 Vssue 配置
+      owner: 'dajiangjunok',
+      repo: 'myBlog',
+      clientId: '08a3426ef7c9f7314ff8',
+      clientSecret: 'e97acceed130b4ddcca392ec7db01d7159a06c7b',
+    },
+  },
   themeConfig: {
     logo: '/assets/img/logo.png',
     nav: [{
@@ -43,26 +51,29 @@ module.exports = {
       link: '/vuepress/'
     },
     {
-      text: 'github',
-      link: 'https://baidu.com',
-      target: '_self',
-      rel: ''
-    },
-    {
       text: '语言',
       items: [{
         text: 'Group1',
         items: [{
-          text: 'About',
-          link: '/about/'
+          text: 'VuePress',
+          link: '/vuepress/'
         },
         {
           text: 'Guide',
           link: '/guide/'
         },
+        {
+          text: '留言',
+          link: '/note/'
+        },
         ]
       }]
     },
+    {
+      text: 'github',
+      link: 'https://github.com/dajiangjunok',
+      rel: ''
+    }
     ],
     sidebar: 'auto',
     search: true,

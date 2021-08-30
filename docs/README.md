@@ -4,7 +4,7 @@ heroImage: /logo.png
 heroText: coderWang
 tagline: 我说前端，既非前端，故名前端
 actionText: 留言
-actionLink: /zh/guide/
+actionLink: /note/
 features:
 - title: 新时代农民工
   details: 个人学习的记录笔记。
