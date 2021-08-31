@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>VuePress | 虎比大雄的笔记</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/myBlog/assets/img/favicon.ico">
+    <link rel="manifest" href="/myBlog/manifest.json">
+    <meta name="description" content="虎比大雄的笔记,个人博客,vue3,react,vue2,webpack,node,前端">
+    <meta name="keywords" content="前端博客，个人笔记，vuepress使用">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/myBlog/assets/css/0.styles.4085d3b1.css" as="style"><link rel="preload" href="/myBlog/assets/js/app.2c391c40.js" as="script"><link rel="preload" href="/myBlog/assets/js/2.e2ffaaa2.js" as="script"><link rel="preload" href="/myBlog/assets/js/12.5ca44a0f.js" as="script"><link rel="preload" href="/myBlog/assets/js/3.9c6e4881.js" as="script"><link rel="prefetch" href="/myBlog/assets/js/10.51d4c912.js"><link rel="prefetch" href="/myBlog/assets/js/11.a12dc2bb.js"><link rel="prefetch" href="/myBlog/assets/js/13.e1b9aa28.js"><link rel="prefetch" href="/myBlog/assets/js/4.1fbd249c.js"><link rel="prefetch" href="/myBlog/assets/js/5.7f158b4b.js"><link rel="prefetch" href="/myBlog/assets/js/6.38e63dc5.js"><link rel="prefetch" href="/myBlog/assets/js/7.3379f57d.js"><link rel="prefetch" href="/myBlog/assets/js/8.3a1c4dfc.js"><link rel="prefetch" href="/myBlog/assets/js/9.b270ad82.js">
+    <link rel="stylesheet" href="/myBlog/assets/css/0.styles.4085d3b1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/myBlog/" class="home-link router-link-active"><img src="/myBlog/assets/img/logo.png" alt="虎比大雄的笔记" class="logo"> <span class="site-name can-hide">虎比大雄的笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/myBlog/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/myBlog/vuepress/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  VuePress
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="语言" class="dropdown-title"><span class="title">语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="语言" class="mobile-dropdown-title"><span class="title">语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Group1
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/myBlog/vuepress/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  VuePress
+</a></li><li class="dropdown-subitem"><a href="/myBlog/guide/" class="nav-link">
+  Guide
+</a></li><li class="dropdown-subitem"><a href="/myBlog/note/" class="nav-link">
+  留言
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/dajiangjunok" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/myBlog/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/myBlog/vuepress/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  VuePress
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="语言" class="dropdown-title"><span class="title">语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="语言" class="mobile-dropdown-title"><span class="title">语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Group1
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/myBlog/vuepress/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  VuePress
+</a></li><li class="dropdown-subitem"><a href="/myBlog/guide/" class="nav-link">
+  Guide
+</a></li><li class="dropdown-subitem"><a href="/myBlog/note/" class="nav-link">
+  留言
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/dajiangjunok" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>VuePress</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/myBlog/vuepress/#vuepress" class="sidebar-link">VuePress</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/myBlog/vuepress/#vuepress-2" class="sidebar-link">VuePress</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/myBlog/vuepress/#vuepress是什么" class="sidebar-link">vuepress是什么</a></li><li class="sidebar-sub-header"><a href="/myBlog/vuepress/#开发前准备" class="sidebar-link">开发前准备</a></li><li class="sidebar-sub-header"><a href="/myBlog/vuepress/#目录结构" class="sidebar-link">目录结构</a></li><li class="sidebar-sub-header"><a href="/myBlog/vuepress/#基本配置" class="sidebar-link">基本配置</a></li><li class="sidebar-sub-header"><a href="/myBlog/vuepress/#静态资源" class="sidebar-link">静态资源</a></li><li class="sidebar-sub-header"><a href="/myBlog/vuepress/#默认主题配置" class="sidebar-link">默认主题配置</a></li><li class="sidebar-sub-header"><a href="/myBlog/vuepress/#最后更新时间-2" class="sidebar-link">最后更新时间</a></li><li class="sidebar-sub-header"><a href="/myBlog/vuepress/#部署" class="sidebar-link">部署</a></li><li class="sidebar-sub-header"><a href="/myBlog/vuepress/#pwa" class="sidebar-link">PWA</a></li><li class="sidebar-sub-header"><a href="/myBlog/vuepress/#留言评论" class="sidebar-link">留言评论</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="vuepress"><a href="#vuepress" class="header-anchor">#</a> VuePress</h2> <h2 id="vuepress-2"><a href="#vuepress-2" class="header-anchor">#</a> VuePress</h2> <h3 id="vuepress是什么"><a href="#vuepress是什么" class="header-anchor">#</a> vuepress是什么</h3> <p>两部分组成</p> <ul><li>第一部分是一个<strong>静态网站</strong>生成器，它包含 <strong>Vue 驱动</strong>的主题系统和<strong>插件 API</strong></li> <li>另一部分书写技术文档而优化的<strong>默认主题</strong></li> <li>每一个由 VuePress 生成的页面都带有预渲染好的 HTML，具有<strong>非常好的加载性能</strong>【首屏加载】和<strong>搜索引擎优化</strong>（SEO）。同时，一旦页面被加载，Vue 将接管这些静态内容，并将其转换成一个完整的单页应用（SPA），其他的页面则会只在用户浏览到的时候才按需加载。</li> <li>在构建时，我们会为应用创建一个服务端渲染（SSR）的版本，然后通过虚拟访问每一条路径来渲染对应的HTML。借鉴Nuxt</li></ul> <p>借鉴Nuxt，为什么不直接使用Nuxt开发</p> <ul><li>VuePress 能做的事情，Nuxt 理论上确实能够胜任，但 Nuxt 是为构建应用程序而生的，而 VuePress 则专注在以内容为中心的静态网站上，同时提供了一些为技术文档定制的开箱即用</li></ul> <h3 id="开发前准备"><a href="#开发前准备" class="header-anchor">#</a> 开发前准备</h3> <ul><li><p>VuePress 需要 node &gt;=  8.6</p></li> <li><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 创建并进入一个新目录</span>
+mkdir vuepress<span class="token operator">-</span>starter <span class="token operator">&amp;&amp;</span> cd vuepress<span class="token operator">-</span>starter
+<span class="token comment">// 进行初始化</span>
+yarn init 
+<span class="token comment">// 将 VuePress 安装为本地依赖</span>
+yarn add <span class="token operator">-</span><span class="token constant">D</span> vuepress 
+<span class="token comment">// 创建你的第一篇文档</span>
+mkdir docs <span class="token operator">&amp;&amp;</span> echo <span class="token string">'# Hello VuePress'</span> <span class="token operator">&gt;</span> docs<span class="token operator">/</span><span class="token constant">README</span><span class="token punctuation">.</span>md
+<span class="token comment">// 在 package.json 中添加一些 scripts【启动指令】</span>
+<span class="token punctuation">{</span>
+  <span class="token string">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;docs:dev&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress dev docs&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;docs:build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress build docs&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//启动本地服务</span>
+yarn docs<span class="token operator">:</span>dev 
+
+
+
+<span class="token comment">// 为什么不全局安装 VuePress？？</span>
+官方文档明确说明不推荐全局安装VuePress
+<span class="token comment">// 为什么使用yarn</span>
+官方文档明确说明 如果你的现有项目依赖了 webpack <span class="token number">3.</span>x，我们推荐使用 Yarn 而不是 npm 来安装 VuePress。因为在这种情形下，npm 会生成错误的依赖树。
+<span class="token comment">// 具体推荐yarn可参考：  https://blog.csdn.net/hyupeng1006/article/details/93881364</span>
+</code></pre></div></li></ul> <h3 id="目录结构"><a href="#目录结构" class="header-anchor">#</a> 目录结构</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">.</span>
+├── docs
+│   ├── <span class="token punctuation">.</span><span class="token function">vuepress</span> <span class="token punctuation">(</span>可选的<span class="token punctuation">)</span>
+│   │   ├── <span class="token function">components</span> <span class="token punctuation">(</span>可选的<span class="token punctuation">)</span>
+│   │   ├── <span class="token function">theme</span> <span class="token punctuation">(</span>可选的<span class="token punctuation">)</span>
+│   │   │   └── Layout<span class="token punctuation">.</span>vue
+│   │   ├── <span class="token keyword">public</span> <span class="token punctuation">(</span>可选的<span class="token punctuation">)</span>
+│   │   ├── <span class="token function">styles</span> <span class="token punctuation">(</span>可选的<span class="token punctuation">)</span>
+│   │   │   ├── index<span class="token punctuation">.</span>styl
+│   │   │   └── palette<span class="token punctuation">.</span>styl
+│   │   ├── <span class="token function">templates</span> <span class="token punctuation">(</span>可选的<span class="token punctuation">,</span> 谨慎配置<span class="token punctuation">)</span>
+│   │   │   ├── dev<span class="token punctuation">.</span>html
+│   │   │   └── ssr<span class="token punctuation">.</span>html
+│   │   ├── config<span class="token punctuation">.</span><span class="token function">js</span> <span class="token punctuation">(</span>可选的<span class="token punctuation">)</span>
+│   │   └── enhanceApp<span class="token punctuation">.</span><span class="token function">js</span> <span class="token punctuation">(</span>可选的<span class="token punctuation">)</span>
+│   │ 
+│   ├── <span class="token constant">README</span><span class="token punctuation">.</span>md
+│   ├── guide
+│   │   └── <span class="token constant">README</span><span class="token punctuation">.</span>md
+│   └── config<span class="token punctuation">.</span>md
+│ 
+└── <span class="token keyword">package</span><span class="token punctuation">.</span>json
+
+<span class="token comment">// 类似Nuxt 文件结构文件夹名，文件名要严格遵守以上大小写，否则可能编译出错</span>
+</code></pre></div><ul><li><code>docs/.vuepress</code>: 用于存放全局的配置、组件、静态资源等。</li> <li><code>docs/.vuepress/components</code>: 该目录中的 Vue 组件将会被自动注册为全局组件。</li> <li><code>docs/.vuepress/theme</code>: 用于存放本地主题。</li> <li><code>docs/.vuepress/styles</code>: 用于存放样式相关的文件。</li> <li><code>docs/.vuepress/styles/index.styl</code>: 将会被自动应用的全局样式文件，会生成在最终的 CSS 文件结尾，具有比默认样式更高的优先级。</li> <li><code>docs/.vuepress/styles/palette.styl</code>: 用于重写默认颜色常量，或者设置新的 stylus 颜色常量。</li> <li><code>docs/.vuepress/public</code>: 静态资源目录。</li> <li><code>docs/.vuepress/templates</code>: 存储 HTML 模板文件。</li> <li><code>docs/.vuepress/templates/dev.html</code>: 用于开发环境的 HTML 模板文件。</li> <li><code>docs/.vuepress/templates/ssr.html</code>: 构建时基于 Vue SSR 的 HTML 模板文件。
+<ul><li>当你想要去自定义 <code>templates/ssr.html</code> 或 <code>templates/dev.html</code> 时，最好基于 <a href="https://github.com/vuejs/vuepress/blob/master/packages/%40vuepress/core/lib/client/index.dev.html" target="_blank" rel="noopener noreferrer">默认的模板文件 (opens new window)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>来修改，否则可能会导致构建出错。</li></ul></li> <li><code>docs/.vuepress/config.js</code>: 配置文件的入口文件，也可以是 <code>YML</code> 或 <code>toml</code>。</li> <li><code>docs/.vuepress/enhanceApp.js</code>: 客户端应用的增强。</li></ul> <h4 id="页面默认路由"><a href="#页面默认路由" class="header-anchor">#</a> 页面默认路由</h4> <p>以上目录结构，我们将 <code>docs</code> 目录作为<strong>入口目录</strong> ，下面文件的相对路径是相对docs目录</p> <table><thead><tr><th>文件的相对路径</th> <th>页面路由地址</th></tr></thead> <tbody><tr><td><code>/README.md</code></td> <td><code>/</code></td></tr> <tr><td><code>/guide/README.md</code></td> <td><code>/guide/</code></td></tr> <tr><td><code>/config.md</code></td> <td><code>/config.html</code></td></tr></tbody></table> <h3 id="基本配置"><a href="#基本配置" class="header-anchor">#</a> 基本配置</h3> <p>一个 VuePress 网站必要的配置文件是 <code>.vuepress/config.js</code>，它应该导出一个 JavaScript 对象</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  title<span class="token operator">:</span> <span class="token string">'Hello VuePress'</span><span class="token punctuation">,</span>
+  description<span class="token operator">:</span> <span class="token string">'Just playing around'</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 对于上述的配置，如果你运行起 dev server，你应该能看到一个页面，它包含一个页头，里面包含一个标题和一个搜索框。VuePress 内置了基于headers 的搜索 —— 它会自动为所有页面的标题、h2 和 h3 构建起一个简单的搜索索引。</span>
+</code></pre></div><h4 id="主题配置"><a href="#主题配置" class="header-anchor">#</a> 主题配置</h4> <p>一个 VuePress 主题应该负责整个网站的布局和交互细节</p> <ul><li>对自定义主题感兴趣可以参考【https://vuepress.vuejs.org/zh/theme/ 】文档，  这里主要以默认主题学习使用</li> <li>默认主题也并不是开箱即食，傻瓜式自动生成，也需要手动进行一些配置
+<ul><li>默认主题提供了一些选项，让你可以去自定义导航栏（navbar）、 侧边栏（sidebar）和 首页（homepage） 等</li></ul></li></ul> <h4 id="应用级别的配置"><a href="#应用级别的配置" class="header-anchor">#</a> 应用级别的配置</h4> <p>由于 VuePress 是一个标准的 Vue 应用，你可以通过创建一个 <code>.vuepress/enhanceApp.js</code> 文件来做一些应用级别的配置，当该文件存在的时候，会被导入到应用内部。<code>enhanceApp.js</code> 应该 <code>export default</code> 一个钩子函数，并接受一个包含了一些应用级别属性的对象作为参数。你可以使用这个钩子来安装一些附加的 Vue 插件、注册全局组件，或者增加额外的路由钩子等： 具体参考【https://vuepress.vuejs.org/zh/plugin/option-api.html#enhanceappfiles】</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 使用异步函数也是可以的</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>
+  Vue<span class="token punctuation">,</span> <span class="token comment">// VuePress 正在使用的 Vue 构造函数</span>
+  options<span class="token punctuation">,</span> <span class="token comment">// 附加到根实例的一些选项</span>
+  router<span class="token punctuation">,</span> <span class="token comment">// 当前应用的路由实例</span>
+  siteData<span class="token punctuation">,</span> <span class="token comment">// 站点元数据</span>
+  isServer <span class="token comment">// 当前应用配置是处于 服务端渲染 或 客户端</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...做一些其他的应用级别的优化</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="静态资源"><a href="#静态资源" class="header-anchor">#</a> 静态资源</h3> <h4 id="相对路径"><a href="#相对路径" class="header-anchor">#</a> 相对路径</h4> <p>VuePress会将所有的  Markdown  文件通过webpack编译成 vue 组件。  我们书写一切静态资源的时候尽可能的使用相对路径</p> <p>注：你也使用 <code>~</code> 前缀来明确地指出这是一个 webpack 的模块请求，这将允许你通过 webpack 别名来引用文件或者 npm 的依赖</p> <ul><li><p>别名的配置<code>.vuepress/config.js</code> 中 <a href="https://vuepress.vuejs.org/zh/config/#configurewebpack" target="_blank" rel="noopener noreferrer">configureWebpack<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 来配置</p> <ul><li><div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  configureWebpack<span class="token operator">:</span> <span class="token punctuation">{</span>
+    resolve<span class="token operator">:</span> <span class="token punctuation">{</span>
+      alias<span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string">'@alias'</span><span class="token operator">:</span> <span class="token string">'path/to/some/dir'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></li></ul></li></ul> <h4 id="公共资源"><a href="#公共资源" class="header-anchor">#</a> 公共资源</h4> <p>有时，你可能需要提供一个静态资源，但是它们并不直接被你的任何一个 markdown 文件或者主题组件引用 —— 举例来说，favicons 和 PWA 的图标，在这种情形下，你可以将它们放在 <code>.vuepress/public</code> 中， 它们最终会被复制到生成的静态文件夹中</p> <h4 id="基础路径"><a href="#基础路径" class="header-anchor">#</a> 基础路径</h4> <p>如果你的网站会被部署到一个<strong>非根路径</strong>，你将需要在 <code>.vuepress/config.js</code> 中设置 <code>base</code>，举例来说，如果你打算将你的网站部署到 <code>https://foo.github.io/bar/</code>，那么 <code>base</code> 的值就应该被设置为 <code>&quot;/bar/&quot;</code> (应当总是以斜杠开始，并以斜杠结束)。</p> <p>有了基础路径（Base URL），如果你希望引用一张放在 <code>.vuepress/public</code> 中的图片，你需要使用这样路径：<code>/bar/image.png</code>，然而，一旦某一天你决定去修改 <code>base</code>，这样的路径引用将会显得异常脆弱。为了解决这个问题，VuePress 提供了内置的一个 helper <strong><code>$withBase</code></strong>（它被注入到了 Vue 的原型上），可以帮助你生成正确的路径：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">:src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>$withBase(<span class="token punctuation">'</span>/foo.png<span class="token punctuation">'</span>)<span class="token punctuation">&quot;</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>foo<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- 以上在Markdown 文件中也可食用。一个 base 路径一旦被设置，它将会自动地作为前缀插入到 .vuepress/config.js 中所有以 / 开始的资源路径中。--&gt;</span>
+</code></pre></div><h3 id="默认主题配置"><a href="#默认主题配置" class="header-anchor">#</a> 默认主题配置</h3> <h4 id="首页"><a href="#首页" class="header-anchor">#</a> 首页</h4> <p>默认的主题提供了一个首页（Homepage）的布局 (用于 <a href="https://vuepress.vuejs.org/zh/" target="_blank" rel="noopener noreferrer">这个网站的主页<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>)。想要使用它，需要在你的根级 <code>README.md</code> 的 <a href="https://vuepress.vuejs.org/zh/guide/markdown.html#front-matter" target="_blank" rel="noopener noreferrer">YAML front matter<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 指定 <code>home: true</code>。以下是一个如何使用的例子：</p> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token punctuation">---</span>
+<span class="token key atrule">home</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+<span class="token key atrule">heroImage</span><span class="token punctuation">:</span> /hero.png
+<span class="token key atrule">heroText</span><span class="token punctuation">:</span> Hero 标题
+<span class="token key atrule">tagline</span><span class="token punctuation">:</span> Hero 副标题
+<span class="token key atrule">actionText</span><span class="token punctuation">:</span> 快速上手 →
+<span class="token key atrule">actionLink</span><span class="token punctuation">:</span> /zh/guide/
+<span class="token key atrule">features</span><span class="token punctuation">:</span>
+<span class="token punctuation">-</span> <span class="token key atrule">title</span><span class="token punctuation">:</span> 简洁至上
+  <span class="token key atrule">details</span><span class="token punctuation">:</span> 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
+<span class="token punctuation">-</span> <span class="token key atrule">title</span><span class="token punctuation">:</span> Vue驱动
+  <span class="token key atrule">details</span><span class="token punctuation">:</span> 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
+<span class="token punctuation">-</span> <span class="token key atrule">title</span><span class="token punctuation">:</span> 高性能
+  <span class="token key atrule">details</span><span class="token punctuation">:</span> VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
+<span class="token key atrule">footer</span><span class="token punctuation">:</span> MIT Licensed <span class="token punctuation">|</span> Copyright © 2018<span class="token punctuation">-</span>present Evan You
+<span class="token punctuation">---</span>
+</code></pre></div><p>你可以将相应的内容设置为 <code>null</code> 来禁用标题和副标题。</p> <p>任何 <code>YAML front matter</code> 之后额外的内容将会以普通的 markdown 被渲染，并插入到 <code>features</code> 的后面</p> <h4 id="导航栏"><a href="#导航栏" class="header-anchor">#</a> 导航栏</h4> <p>导航栏可能包含你的<strong>页面标题</strong>、<strong>搜索框</strong>、 <strong>导航栏链接</strong>、<strong>多语言切换</strong>、<strong>仓库链接</strong>，它们均取决于你的配置。</p> <h5 id="导航栏logo"><a href="#导航栏logo" class="header-anchor">#</a> 导航栏logo</h5> <p>你可以通过 <code>themeConfig.logo</code> 增加导航栏 Logo ，Logo 可以被放置在<strong>公共文件目录</strong>：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// .vuepress/config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  themeConfig<span class="token operator">:</span> <span class="token punctuation">{</span>
+    logo<span class="token operator">:</span> <span class="token string">'/assets/img/logo.png'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h5 id="导航栏链接"><a href="#导航栏链接" class="header-anchor">#</a> 导航栏链接</h5> <p>你可以通过 <code>themeConfig.nav</code> 增加一些导航栏链接:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// .vuepress/config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  themeConfig<span class="token operator">:</span> <span class="token punctuation">{</span>
+    nav<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'Home'</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">'/'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'Guide'</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">'/guide/'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'External'</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">'https://google.com'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>外部链接 <code>标签的特性将默认包含`target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;`，你可以提供 `target` 与 `rel`，它们将被作为特性被增加到</code> 标签上：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// .vuepress/config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  themeConfig<span class="token operator">:</span> <span class="token punctuation">{</span>
+    nav<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'External'</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">'https://google.com'</span><span class="token punctuation">,</span> target<span class="token operator">:</span><span class="token string">'_self'</span><span class="token punctuation">,</span> rel<span class="token operator">:</span><span class="token string">''</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'Guide'</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">'/guide/'</span><span class="token punctuation">,</span> target<span class="token operator">:</span><span class="token string">'_blank'</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>当你提供了一个 <code>items</code> 数组而不是一个单一的 <code>link</code> 时，它将显示为一个 <code>下拉列表</code> ：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// .vuepress/config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  themeConfig<span class="token operator">:</span> <span class="token punctuation">{</span>
+    nav<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        text<span class="token operator">:</span> <span class="token string">'Languages'</span><span class="token punctuation">,</span>
+        ariaLabel<span class="token operator">:</span> <span class="token string">'Language Menu'</span><span class="token punctuation">,</span>
+        items<span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'Chinese'</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">'/language/chinese/'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'Japanese'</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">'/language/japanese/'</span> <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>此外，你还可以通过嵌套的 <code>items</code> 来在 <code>下拉列表</code> 中设置分组：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// .vuepress/config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  themeConfig<span class="token operator">:</span> <span class="token punctuation">{</span>
+    nav<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        text<span class="token operator">:</span> <span class="token string">'Languages'</span><span class="token punctuation">,</span>
+        items<span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'Group1'</span><span class="token punctuation">,</span> items<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token comment">/*  */</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'Group2'</span><span class="token punctuation">,</span> items<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token comment">/*  */</span><span class="token punctuation">]</span> <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h5 id="禁用导航栏"><a href="#禁用导航栏" class="header-anchor">#</a> 禁用导航栏</h5> <p>你可以使用 <code>themeConfig.navbar</code> 来禁用所有页面的导航栏：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// .vuepress/config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  themeConfig<span class="token operator">:</span> <span class="token punctuation">{</span>
+    navbar<span class="token operator">:</span> <span class="token boolean">false</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>你也可以通过 <code>YAML front matter</code> 来禁用某个指定页面的导航栏：</p> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token punctuation">---</span>
+<span class="token key atrule">navbar</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+<span class="token punctuation">---</span>
+</code></pre></div><h4 id="侧边栏"><a href="#侧边栏" class="header-anchor">#</a> 侧边栏</h4> <p>想要使 侧边栏（Sidebar）生效，需要配置 <code>themeConfig.sidebar</code>，基本的配置，需要一个包含了多个链接的数组：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// .vuepress/config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  themeConfig<span class="token operator">:</span> <span class="token punctuation">{</span>
+    sidebar<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">'/'</span><span class="token punctuation">,</span>
+      <span class="token string">'/page-a'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">[</span><span class="token string">'/page-b'</span><span class="token punctuation">,</span> <span class="token string">'Explicit link text'</span><span class="token punctuation">]</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>你可以省略 <code>.md</code> 拓展名，同时以 <code>/</code> 结尾的路径将会被视为 <code>*/README.md</code>，这个链接的文字将会被自动获取到（无论你是声明为页面的第一个 header，还是明确地在 <code>YAML front matter</code> 中指定页面的标题）。如果你想要显示地指定链接的文字，使用一个格式为 <code>[link, text]</code> 的数组</p> <h5 id="嵌套的标题链接"><a href="#嵌套的标题链接" class="header-anchor">#</a> 嵌套的标题链接</h5> <p>默认情况下，侧边栏会自动地显示由当前页面的标题（headers）组成的链接，并按照页面本身的结构进行嵌套，你可以通过 <code>themeConfig.sidebarDepth</code> 来修改它的行为。默认的深度是 <code>1</code>，它将提取到 <code>h2</code> 的标题，设置成 <code>0</code> 将会禁用标题（headers）链接，同时，最大的深度为 <code>2</code>，它将同时提取 <code>h2</code> 和 <code>h3</code> 标题。</p> <p>也可以使用 <code>YAML front matter</code> 来为某个页面重写此值：</p> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token punctuation">---</span>
+<span class="token key atrule">sidebarDepth</span><span class="token punctuation">:</span> <span class="token number">2</span>
+<span class="token punctuation">---</span>
+</code></pre></div><h5 id="显示所有页面的标题链接"><a href="#显示所有页面的标题链接" class="header-anchor">#</a> 显示所有页面的标题链接</h5> <p>默认情况下，侧边栏只会显示由当前活动页面的标题（headers）组成的链接，你可以将 <code>themeConfig.displayAllHeaders</code> 设置为 <code>true</code> 来显示所有页面的标题链接：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// .vuepress/config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  themeConfig<span class="token operator">:</span> <span class="token punctuation">{</span>
+    displayAllHeaders<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token comment">// 默认值：false</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h5 id="活动的标题链接"><a href="#活动的标题链接" class="header-anchor">#</a> 活动的标题链接</h5> <p>默认情况下，当用户通过滚动查看页面的不同部分时，嵌套的标题链接和 URL 中的 Hash 值会实时更新，这个行为可以通过以下的配置来禁用：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// .vuepress/config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  themeConfig<span class="token operator">:</span> <span class="token punctuation">{</span>
+    activeHeaderLinks<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 默认值：true</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 当你禁用此选项时，此功能的相应脚本将不会被加载,可作为性能优化的点</span>
+</code></pre></div><h5 id="侧边栏分组"><a href="#侧边栏分组" class="header-anchor">#</a> 侧边栏分组</h5> <p>你可以通过使用<strong>对象</strong>来将侧边栏划分成多个组：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// .vuepress/config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  themeConfig<span class="token operator">:</span> <span class="token punctuation">{</span>
+    sidebar<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        title<span class="token operator">:</span> <span class="token string">'Group 1'</span><span class="token punctuation">,</span>   <span class="token comment">// 必要的</span>
+        path<span class="token operator">:</span> <span class="token string">'/foo/'</span><span class="token punctuation">,</span>      <span class="token comment">// 可选的, 标题的跳转链接，应为绝对路径且必须存在</span>
+        collapsable<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 可选的, 默认值是 true,</span>
+        sidebarDepth<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>    <span class="token comment">// 可选的, 默认值是 1</span>
+        children<span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token string">'/'</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        title<span class="token operator">:</span> <span class="token string">'Group 2'</span><span class="token punctuation">,</span>
+        children<span class="token operator">:</span> <span class="token punctuation">[</span> <span class="token comment">/* ... */</span> <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        initialOpenGroupIndex<span class="token operator">:</span> <span class="token operator">-</span><span class="token number">1</span> <span class="token comment">// 可选的, 默认值是 0</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>侧边栏的每个子组默认是可折叠的，你可以设置 <code>collapsable: false</code> 来让一个组永远都是展开状态。</p> <p>一个侧边栏的子组配置同时支持 <code>sidebarDepth</code>字段用于重写默认显示的侧边栏深度(<code>1</code>)。<strong>嵌套的侧边栏分组也是支持的</strong></p> <h5 id="多个侧边栏"><a href="#多个侧边栏" class="header-anchor">#</a> 多个侧边栏</h5> <p>如果你想为不同的页面组来显示不同的侧边栏，首先，将你的页面文件组织成下述的目录结构</p> <div class="language-text extra-class"><pre class="language-text"><code>.
+├─ README.md
+├─ contact.md
+├─ about.md
+├─ foo/
+│  ├─ README.md
+│  ├─ one.md
+│  └─ two.md
+└─ bar/
+   ├─ README.md
+   ├─ three.md
+   └─ four.md
+</code></pre></div><p>接着，遵循以下的侧边栏配置：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// .vuepress/config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  themeConfig<span class="token operator">:</span> <span class="token punctuation">{</span>
+    sidebar<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string">'/foo/'</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">''</span><span class="token punctuation">,</span>     <span class="token comment">/* /foo/ */</span>
+        <span class="token string">'one'</span><span class="token punctuation">,</span>  <span class="token comment">/* /foo/one.html */</span>
+        <span class="token string">'two'</span>   <span class="token comment">/* /foo/two.html */</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+      <span class="token string">'/bar/'</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">''</span><span class="token punctuation">,</span>      <span class="token comment">/* /bar/ */</span>
+        <span class="token string">'three'</span><span class="token punctuation">,</span> <span class="token comment">/* /bar/three.html */</span>
+        <span class="token string">'four'</span>   <span class="token comment">/* /bar/four.html */</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+      <span class="token comment">// fallback</span>
+      <span class="token string">'/'</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">''</span><span class="token punctuation">,</span>        <span class="token comment">/* / */</span>
+        <span class="token string">'contact'</span><span class="token punctuation">,</span> <span class="token comment">/* /contact.html */</span>
+        <span class="token string">'about'</span>    <span class="token comment">/* /about.html */</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 确保 fallback 侧边栏被最后定义。VuePress 会按顺序遍历侧边栏配置来寻找匹配的配置。也就是说月通用的路径越要写在后面</span>
+</code></pre></div><h5 id="自动生成侧栏"><a href="#自动生成侧栏" class="header-anchor">#</a> 自动生成侧栏</h5> <p>如果你希望自动生成一个仅仅包含了当前页面标题（headers）链接的侧边栏，你可以通过 <code>YAML front matter</code> 来实现：</p> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token punctuation">---</span>
+<span class="token key atrule">sidebar</span><span class="token punctuation">:</span> auto
+<span class="token punctuation">---</span>
+</code></pre></div><p>你也可以通过配置来在所有页面中启用它：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// .vuepress/config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  themeConfig<span class="token operator">:</span> <span class="token punctuation">{</span>
+    sidebar<span class="token operator">:</span> <span class="token string">'auto'</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h5 id="禁用侧边栏"><a href="#禁用侧边栏" class="header-anchor">#</a> 禁用侧边栏</h5> <p>你可以通过 <code>YAML front matter</code> 来禁用指定页面的侧边栏：</p> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token punctuation">---</span>
+<span class="token key atrule">sidebar</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+<span class="token punctuation">---</span>
+</code></pre></div><h4 id="搜索框"><a href="#搜索框" class="header-anchor">#</a> 搜索框</h4> <h5 id="内置搜索"><a href="#内置搜索" class="header-anchor">#</a> 内置搜索</h5> <p>你可以通过设置 <code>themeConfig.search: false</code> 来禁用默认的搜索框，或是通过 <code>themeConfig.searchMaxSuggestions</code> 来调整默认搜索框显示的搜索结果数量</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// .vuepress/config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  themeConfig<span class="token operator">:</span> <span class="token punctuation">{</span>
+    search<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    searchMaxSuggestions<span class="token operator">:</span> <span class="token number">10</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>你可以通过在页面的 frontmatter 中设置 tags 来优化搜索结果：</p> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token punctuation">---</span>
+<span class="token key atrule">tags</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> 配置
+  <span class="token punctuation">-</span> 主题
+  <span class="token punctuation">-</span> 索引
+<span class="token punctuation">---</span>
+</code></pre></div><p>你可以通过在页面的 frontmatter 中设置 search 来对单独的页面禁用内置的搜索框：</p> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token punctuation">---</span>
+<span class="token key atrule">search</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+<span class="token punctuation">---</span>
+</code></pre></div><p><strong>注：内置搜索只会为页面的标题、<code>h2</code> 、 <code>h3</code> 以及 <code>tags</code> 构建搜索索引。 如果你需要全文搜索，你可以使用<code>Algolia 搜索</code></strong></p> <h5 id="algolia-搜索"><a href="#algolia-搜索" class="header-anchor">#</a> Algolia 搜索</h5> <p>你可以通过 <code>themeConfig.algolia</code> 选项来用 <strong>Algolia 搜索</strong> (opens new window)替换内置的搜索框。要启用 Algolia 搜索，你需要至少提供 <code>apiKey</code> 和 <code>indexName</code>：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// .vuepress/config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  themeConfig<span class="token operator">:</span> <span class="token punctuation">{</span>
+    algolia<span class="token operator">:</span> <span class="token punctuation">{</span>
+      apiKey<span class="token operator">:</span> <span class="token string">'&lt;API_KEY&gt;'</span><span class="token punctuation">,</span>
+      indexName<span class="token operator">:</span> <span class="token string">'&lt;INDEX_NAME&gt;'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+ 
+<span class="token comment">// 不同于开箱即用的 内置搜索，Algolia 搜索 (opens new window)需要你在使用之前将你的网站提交给它们用于创建索引。</span>
+</code></pre></div><h4 id="最后更新时间"><a href="#最后更新时间" class="header-anchor">#</a> 最后更新时间</h4> <p>你可以通过 <code>themeConfig.lastUpdated</code> 选项来获取每个文件最后一次 <code>git</code> 提交的 UNIX 时间戳(ms)，同时它将以合适的日期格式显示在每一页的底部：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// .vuepress/config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  themeConfig<span class="token operator">:</span> <span class="token punctuation">{</span>
+    lastUpdated<span class="token operator">:</span> <span class="token string">'Last Updated'</span><span class="token punctuation">,</span> <span class="token comment">// string | boolean</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+ 
+<span class="token comment">// 请注意，themeConfig.lastUpdated 默认是关闭的，如果给定一个字符串，它将会作为前缀显示（默认值是：Last Updated）。</span>
+<span class="token comment">/**使用须知：
+ *
+ *  由于 lastUpdated 是基于 git 的, 所以你只能在一个基于 git 的项目中启用它。此外，由于使用的时间戳来自 git commit，因此它将仅在给定  ** 页的第一次提交之后显示，并且仅在该页面后续提交更改时更新。
+*/</span>
+
+</code></pre></div><h4 id="上-下一篇链接"><a href="#上-下一篇链接" class="header-anchor">#</a> 上 / 下一篇链接</h4> <p>上一篇和下一篇文章的链接将会自动地根据当前页面的侧边栏的顺序来获取。</p> <p>你可以通过 <code>themeConfig.nextLinks</code> 和 <code>themeConfig.prevLinks</code> 来全局禁用它们：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// .vuepress/config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  themeConfig<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 默认值是 true 。设置为 false 来禁用所有页面的 下一篇 链接</span>
+    nextLinks<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token comment">// 默认值是 true 。设置为 false 来禁用所有页面的 上一篇 链接</span>
+    prevLinks<span class="token operator">:</span> <span class="token boolean">false</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>你也可以使用 <code>YAML front matter</code> 来明确地重写或者禁用它们</p> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token punctuation">---</span>
+<span class="token key atrule">prev</span><span class="token punctuation">:</span> ./some<span class="token punctuation">-</span>other<span class="token punctuation">-</span>page
+<span class="token key atrule">next</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+<span class="token punctuation">---</span>
+</code></pre></div><h4 id="git-仓库和编辑链接"><a href="#git-仓库和编辑链接" class="header-anchor">#</a> Git 仓库和编辑链接</h4> <p>当你提供了 <code>themeConfig.repo</code> 选项，将会自动在每个页面的导航栏生成生成一个 GitHub 链接，以及在页面的底部生成一个 <code>&quot;Edit this page&quot;</code> 链接。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// .vuepress/config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  themeConfig<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 假定是 GitHub. 同时也可以是一个完整的 GitLab URL</span>
+    repo<span class="token operator">:</span> <span class="token string">'vuejs/vuepress'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为</span>
+    <span class="token comment">// &quot;GitHub&quot;/&quot;GitLab&quot;/&quot;Bitbucket&quot; 其中之一，或是 &quot;Source&quot;。</span>
+    repoLabel<span class="token operator">:</span> <span class="token string">'查看源码'</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// 以下为可选的编辑链接选项</span>
+
+    <span class="token comment">// 假如你的文档仓库和项目本身不在一个仓库：</span>
+    docsRepo<span class="token operator">:</span> <span class="token string">'vuejs/vuepress'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 假如文档不是放在仓库的根目录下：</span>
+    docsDir<span class="token operator">:</span> <span class="token string">'docs'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 假如文档放在一个特定的分支下：</span>
+    docsBranch<span class="token operator">:</span> <span class="token string">'master'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 默认是 false, 设置为 true 来启用</span>
+    editLinks<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">// 默认为 &quot;Edit this page&quot;</span>
+    editLinkText<span class="token operator">:</span> <span class="token string">'帮助我们改善此页面！'</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>你可以通过 <code>YAML front matter</code> 来禁用指定页面的编辑链接：</p> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token punctuation">---</span>
+<span class="token key atrule">editLink</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+<span class="token punctuation">---</span>
+</code></pre></div><h4 id="页面滚动"><a href="#页面滚动" class="header-anchor">#</a> 页面滚动</h4> <p>你可以通过 <code>themeConfig.smoothScroll</code> 选项来启用页面滚动效果</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// .vuepress/config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  themeConfig<span class="token operator">:</span> <span class="token punctuation">{</span>
+    smoothScroll<span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="自定义页面类"><a href="#自定义页面类" class="header-anchor">#</a> 自定义页面类</h4> <p>有时候你可能需要为特定页面添加一个 CSS 类名，以方便针对该页面添加一些专门的 CSS。这种情况下你可以在该页面的 YAML front matter 中声明一个 <code>pageClass</code>：</p> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token punctuation">---</span>
+<span class="token key atrule">pageClass</span><span class="token punctuation">:</span> custom<span class="token punctuation">-</span>page<span class="token punctuation">-</span>class
+<span class="token punctuation">---</span>
+</code></pre></div><p>只能在 <code>.vuepress/styles/index.styl</code> 中编写针对该页面的 CSS</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* .vuepress/styles/index.styl */</span>
+
+<span class="token selector">.theme-container.custom-page-class</span> <span class="token punctuation">{</span>
+  <span class="token comment">/* 特定页面的 CSS */</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* 自定义样式应该写在 index.styl 内, 该文件可以让你方便地添加或覆盖样式. */</span>
+</code></pre></div><h4 id="特定页面的自定义布局"><a href="#特定页面的自定义布局" class="header-anchor">#</a> 特定页面的自定义布局</h4> <p>默认情况下，每个 <code>*.md</code> 文件将会被渲染在一个 `` 容器中，同时还有侧边栏、自动生成的编辑链接，以及上 / 下一篇文章的链接。如果你想要使用一个完全自定义的组件来代替当前的页面（而只保留导航栏），你可以再次使用 <code>YAML front matter</code> 来指定这个组件。</p> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token punctuation">---</span>
+<span class="token key atrule">layout</span><span class="token punctuation">:</span> SpecialLayout
+<span class="token punctuation">---</span>
+</code></pre></div><p>这将会为当前的页面渲染 <code>.vuepress/components/SpecialLayout.vue</code> 布局</p> <h3 id="最后更新时间-2"><a href="#最后更新时间-2" class="header-anchor">#</a> 最后更新时间</h3> <p>你可以通过 <code>themeConfig.lastUpdated</code> 选项来获取每个文件最后一次 <code>git</code> 提交的 UNIX 时间戳(ms)，同时它将以合适的日期格式显示在每一页的底部：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// .vuepress/config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  themeConfig<span class="token operator">:</span> <span class="token punctuation">{</span>
+    lastUpdated<span class="token operator">:</span> <span class="token string">'Last Updated'</span><span class="token punctuation">,</span> <span class="token comment">// string | boolean</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>请注意，<code>themeConfig.lastUpdated</code> 默认是关闭的，如果给定一个字符串，它将会作为前缀显示（默认值是：<code>Last Updated</code>）。</p> <p><strong>如果不喜欢这种格式的时间，可以官网找到插件下的  last-update  ，进行配置，注意转化时间需要使用到moment包</strong></p> <h3 id="部署"><a href="#部署" class="header-anchor">#</a> 部署</h3> <p>将vuepress生成的博客自动化部署到<code>github.io</code></p> <ol><li><p>在 <code>docs/.vuepress/config.js</code> 中设置正确的 <code>base</code>。</p> <p>如果你打算发布到 <code>https://&lt;USERNAME&gt;.github.io/</code>，则可以省略这一步，因为 <code>base</code> 默认即是 <code>&quot;/&quot;</code>。</p> <p>如果你打算发布到 <code>https://&lt;USERNAME&gt;.github.io/&lt;REPO&gt;/</code>（也就是说你的仓库在 <code>https://github.com/&lt;USERNAME&gt;/&lt;REPO&gt;</code>），则将 <code>base</code> 设置为 <code>&quot;/&lt;REPO&gt;/&quot;</code>。</p></li> <li><p>在你的项目中，创建一个如下的 <code>deploy.sh</code> 文件（请自行判断去掉高亮行的注释）:</p></li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token shebang important">#!/usr/bin/env sh</span>
+
+<span class="token comment"># 确保脚本抛出遇到的错误</span>
+<span class="token builtin class-name">set</span> -e
+
+<span class="token comment"># 生成静态文件</span>
+<span class="token function">npm</span> run docs:build
+
+<span class="token comment"># 进入生成的文件夹</span>
+<span class="token builtin class-name">cd</span> docs/.vuepress/dist
+
+<span class="token comment"># 如果是发布到自定义域名</span>
+<span class="token comment"># echo 'www.example.com' &gt; CNAME</span>
+
+<span class="token function">git</span> init
+<span class="token function">git</span> <span class="token function">add</span> -A
+<span class="token function">git</span> commit -m <span class="token string">'deploy'</span>
+
+<span class="token comment"># 如果发布到 https://&lt;USERNAME&gt;.github.io</span>
+<span class="token comment"># git push -f git@github.com:&lt;USERNAME&gt;/&lt;USERNAME&gt;.github.io.git master</span>
+
+<span class="token comment"># 如果发布到 https://&lt;USERNAME&gt;.github.io/&lt;REPO&gt;</span>
+<span class="token comment"># git push -f git@github.com:&lt;USERNAME&gt;/&lt;REPO&gt;.git master:gh-pages</span>
+
+<span class="token builtin class-name">cd</span> -
+</code></pre></div><h3 id="pwa"><a href="#pwa" class="header-anchor">#</a> PWA</h3> <p>vuepress 的pwa 基于插件  @vuepress/plugin-pwa</p> <p>安装</p> <ul><li><div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">yarn</span> <span class="token function">add</span> -D @vuepress/plugin-pwa
+</code></pre></div></li></ul> <p>使用</p> <ul><li><div class="language-js extra-class"><pre class="language-js"><code>plugins<span class="token operator">:</span>  <span class="token punctuation">[</span>
+  <span class="token punctuation">[</span>
+   <span class="token string">'@vuepress/pwa'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+     serviceWorker<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+     updatePopup<span class="token operator">:</span> <span class="token punctuation">{</span>
+       message<span class="token operator">:</span> <span class="token string">&quot;发现垃圾桶增加新垃圾&quot;</span><span class="token punctuation">,</span>
+       buttonText<span class="token operator">:</span> <span class="token string">&quot;更新&quot;</span>
+     <span class="token punctuation">}</span>
+   <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+ <span class="token punctuation">]</span>
+</code></pre></div></li> <li><p>如果需要国际化语言的话</p></li></ul> <div class="language-js extra-class"><pre class="language-js"><code>themeConfig<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">'/'</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+     serviceWorker<span class="token operator">:</span> <span class="token punctuation">{</span>
+       updatePopup<span class="token operator">:</span> <span class="token punctuation">{</span>
+         message<span class="token operator">:</span> <span class="token string">&quot;New content is available.&quot;</span><span class="token punctuation">,</span>
+         buttonText<span class="token operator">:</span> <span class="token string">&quot;Refresh&quot;</span>
+       <span class="token punctuation">}</span>
+     <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">'/zh/'</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+     serviceWorker<span class="token operator">:</span> <span class="token punctuation">{</span>
+       updatePopup<span class="token operator">:</span> <span class="token punctuation">{</span>
+         message<span class="token operator">:</span> <span class="token string">&quot;发现新内容可用&quot;</span><span class="token punctuation">,</span>
+         buttonText<span class="token operator">:</span> <span class="token string">&quot;刷新&quot;</span>
+       <span class="token punctuation">}</span>
+     <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  plugins<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">'@vuepress/pwa'</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      serviceWorker<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      updatePopup<span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string">'/'</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          message<span class="token operator">:</span> <span class="token string">&quot;New content is available.&quot;</span><span class="token punctuation">,</span>
+          buttonText<span class="token operator">:</span> <span class="token string">&quot;Refresh&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token string">'/zh/'</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          message<span class="token operator">:</span> <span class="token string">&quot;发现新内容可用&quot;</span><span class="token punctuation">,</span>
+          buttonText<span class="token operator">:</span> <span class="token string">&quot;刷新&quot;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><ul><li>也可自定义 提示更新的弹窗，具体查看官网</li></ul> <div class="language-md extra-class"><pre class="language-md"><code>提示
+
+为了让你的网站完全地兼容 PWA，你需要:
+
+在 .vuepress/public 提供 Manifest 和 icons
+在 .vuepress/config.js 添加正確的 head links. 
+更多细节，请参见 MDN docs about the Web App Manifest (opens new window).
+</code></pre></div><p>例子</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  head<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span><span class="token string">'link'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> rel<span class="token operator">:</span> <span class="token string">'icon'</span><span class="token punctuation">,</span> href<span class="token operator">:</span> <span class="token string">'/logo.png'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token string">'link'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> rel<span class="token operator">:</span> <span class="token string">'manifest'</span><span class="token punctuation">,</span> href<span class="token operator">:</span> <span class="token string">'/manifest.json'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token string">'meta'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> name<span class="token operator">:</span> <span class="token string">'theme-color'</span><span class="token punctuation">,</span> content<span class="token operator">:</span> <span class="token string">'#3eaf7c'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token string">'meta'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> name<span class="token operator">:</span> <span class="token string">'apple-mobile-web-app-capable'</span><span class="token punctuation">,</span> content<span class="token operator">:</span> <span class="token string">'yes'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token string">'meta'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> name<span class="token operator">:</span> <span class="token string">'apple-mobile-web-app-status-bar-style'</span><span class="token punctuation">,</span> content<span class="token operator">:</span> <span class="token string">'black'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token string">'link'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> rel<span class="token operator">:</span> <span class="token string">'apple-touch-icon'</span><span class="token punctuation">,</span> href<span class="token operator">:</span> <span class="token string">'/icons/apple-touch-icon-152x152.png'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token string">'link'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> rel<span class="token operator">:</span> <span class="token string">'mask-icon'</span><span class="token punctuation">,</span> href<span class="token operator">:</span> <span class="token string">'/icons/safari-pinned-tab.svg'</span><span class="token punctuation">,</span> color<span class="token operator">:</span> <span class="token string">'#3eaf7c'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token string">'meta'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> name<span class="token operator">:</span> <span class="token string">'msapplication-TileImage'</span><span class="token punctuation">,</span> content<span class="token operator">:</span> <span class="token string">'/icons/msapplication-icon-144x144.png'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token string">'meta'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> name<span class="token operator">:</span> <span class="token string">'msapplication-TileColor'</span><span class="token punctuation">,</span> content<span class="token operator">:</span> <span class="token string">'#000000'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="留言评论"><a href="#留言评论" class="header-anchor">#</a> 留言评论</h3> <h4 id="valine-和-vssue"><a href="#valine-和-vssue" class="header-anchor">#</a> valine 和 vssue</h4> <p>两种方案都是可以做到留言功能，不同点valine需要实名制，相比较vssue更麻烦一些。我们使用vssue来完成留言功能</p> <h4 id="vssue使用"><a href="#vssue使用" class="header-anchor">#</a> vssue使用：</h4> <p>1.前往 <a href="https://vssue.js.org/zh/guide/supported-platforms.html" target="_blank" rel="noopener noreferrer">支持的代码托管平台 - 创建 OAuth App<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>2.注册完毕后我们就可以得到<code>Client ID</code> 和 <code>Client secrets</code></p> <p>3.选中V3 ,V4版本</p> <p>4.安装 <code>@vssue/vuepress-plugin-vssue</code> 和n <code>@vssue/api-github-v4</code> 版本</p> <p>5.vuepress项目中配置</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  plugins<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">'@vssue/vuepress-plugin-vssue'</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 设置 `platform` 而不是 `api`</span>
+      platform<span class="token operator">:</span> <span class="token string">'github-v4'</span><span class="token punctuation">,</span>
+
+      <span class="token comment">// 其他的 Vssue 配置 找到相应的项目信息</span>
+      owner<span class="token operator">:</span> <span class="token string">'OWNER_OF_REPO'</span><span class="token punctuation">,</span>
+      repo<span class="token operator">:</span> <span class="token string">'NAME_OF_REPO'</span><span class="token punctuation">,</span>
+      clientId<span class="token operator">:</span> <span class="token string">'YOUR_CLIENT_ID'</span><span class="token punctuation">,</span>
+      clientSecret<span class="token operator">:</span> <span class="token string">'YOUR_CLIENT_SECRET'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>6.使用</p> <p>md文档中使用  <code>&lt;Vssue :options=&quot;{ locale: 'zh' }&quot; /&gt;</code>  标签使用，该配置仅在此页面生效，也可全局配置，可以在所有配置路由下的文档中增加评论功能，自行了解</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">8/31/2021, 12:29:16 AM</span></div></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/myBlog/assets/js/app.2c391c40.js" defer></script><script src="/myBlog/assets/js/2.e2ffaaa2.js" defer></script><script src="/myBlog/assets/js/12.5ca44a0f.js" defer></script><script src="/myBlog/assets/js/3.9c6e4881.js" defer></script>
+  </body>
+</html>

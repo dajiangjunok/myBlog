@@ -1,0 +1,9 @@
+{
+  "name": "虎比大雄的笔记",
+  "short_name": "coderwang",
+  "theme_color": "#2196f3",
+  "background_color": "#2196f3",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/"
+}
